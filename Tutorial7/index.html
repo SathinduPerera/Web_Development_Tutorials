@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Valentine flowers</h1>
+    <div id="content">
+        <div class="image_container">
+            <img class="images" src="Images/white.jpeg" alt="White Bouquet">
+            <h3>White Bouquet</h3>
+            <h3>&#163; 24</h3>
+        </div>
+        <div class="image_container">
+            <img class="images" src="Images/pink.jpeg" alt="White Bouquet">
+            <h3>White Bouquet</h3>
+            <h3>&#163; 24</h3>
+        </div>
+        <div class="image_container">
+            <img class="images" src="Images/red.jpeg" alt="White Bouquet">
+            <h3>White Bouquet</h3>
+            <h3>&#163; 24</h3>
+        </div>
+        <div id="order-container">
+            Your order: <br>
+        <div class="image_container">
+            <img class="images" src="Images/white-gift.jpeg" alt="White Bouquet">
+            <h3>&#163; 24</h3>
+        </div>
+        </div>
+    </div>
+    <form id="form">
+        <label for="select">Bouquet Options: </label>
+        <input placeholder="Select Option" id="select" list="options" name="option" required>
+				<datalist id="options">
+					<option>with Champagne</option>
+					<option>extra</option>
+					<option>extra with Champagne</option>
+				</datalist>
+        <label>Bouquet Colour: </label>
+        <input type="radio" name="colour" id="White">
+        <label for="White">White</label>
+        <input type="radio" name="colour" id="Pink">
+        <label for="Pink">Pink</label>
+        <input type="radio" name="colour" id="Red">
+        <label for="Red">Red</label>
+        <button id="clear" type="reset">Clear your order</button>
+        <button id="place">Place your order</button>
+    </form>
+</body>
+</html>

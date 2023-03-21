@@ -1,0 +1,41 @@
+body{
+    background-color: grey;
+}
+
+h1{
+    text-align: center;
+}
+
+#content{
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+form{
+    background-color: white;
+    padding: 2%;
+    width: fit-content;
+    margin: auto;
+    margin-top: 1%;
+}
+
+#order-container{
+    background-color: lightslategray;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.image_container{
+    height: auto;
+    width: 20%;
+    margin: 20px;
+    background-color: white;
+    text-align: center;
+    width: max-content;
+    
+}
+
+.images{
+    width: 100%;
+
+}
