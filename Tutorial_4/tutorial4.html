@@ -1,0 +1,144 @@
+<!doctype html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Tutorial4</title>
+		<style>
+		
+			body{
+				background-image:url("hotel_pic_2_light.jpg");
+				//background-attachment: fixed;
+				background-size:cover;
+				color:white;
+				font-size:1.25em;
+			}
+			
+			h1{
+				font-family:fantasy;
+				font-weight:lighter;-
+			}
+		
+			input, textarea{
+				margin-right:10px;
+				margin-top:10px;
+				width:250px;
+				height:20px;
+				font-size:0.75em;
+			}
+			
+			textarea{
+				font-size:15px;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			
+			a{
+				color:white;
+			}
+			
+			button{
+				margin-top: 20px;
+				margin-right: 50px;
+				font-size:1em;
+			}
+			
+			.same-line-inputs{
+				float:left;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<h1>Hotel Reservation Form</h1>
+		<form action="mailto:sathindu.geethika@gmail.com" method="post">
+			<div class="same-line-inputs">
+				<label for="f_name">First Name:</label><br>
+				<input placeholder="First name" id="f_name" name="f_name" autofocus required>
+			</div>
+			<div>
+				<label for="l_name">Last Name:</label><br>
+				<input placeholder="Last Name" id="l_name" name="l_name" required>
+			</div>
+			<br>
+			<div>
+				<label for="email">Email: </label><br>
+				<input id="email" type="email" name="email" placeholder="Email" required>
+			</div>
+			<br>
+			<div class="same-line-inputs">
+				<label for="indate">Check-in Date:</label><br>
+				<input placeholder="Check-in Date" id="f_name" name="check-in" type="datetime-local" required>
+			</div>
+			<div>
+				<label for="outdate">Check-out Date:</label><br>
+				<input placeholder="Check-out date" id="outdate" name="check-out" type="datetime-local" required>
+			</div>
+			<br>
+			<div>
+				<label for="count">Number of People:</label><br>
+				<input type="number" id="count" min="1" max="10" step="1" value="1" required>
+			</div>
+			<br>
+			<div class="same-line-inputs">
+				<label for="f_name">Room Type:</label><br>
+				<input placeholder="Room Type" id="r_type" list="r_types" name="r_type" required>
+				<datalist id="r_types">
+					<option>Single Room</option>
+					<option>Double Room</option>
+					<option>Studio Room</option>
+					<option>Deluxe Room</option>
+					<option>Room with a View</option>
+					<option>Suite</option>
+					<option>Presidential Suite</option>
+				</datalist>
+			</div>
+			<div>
+				<label for="b_type">Board Type:</label><br>
+				<input placeholder="Board Type" id="b_type" name="b_type" list="b_types" required>
+				<datalist id="b_types">
+					<option>Full-board</option>
+					<option>Half-borad</option>
+				</datalist>
+			</div>
+			<br>
+			<div>
+				<label for="comments">Additional Requirements: </label><br>
+				<textarea placeholder="Please state any additional requirements you may need so that we can make you stay more enjoyable." style="height: 124px; width: 419px;" name="add_req"></textarea>
+			</div>
+			<br>
+			<div>
+				<label for="tele">Telephone No.: </label><br>
+				<input id="tele" type="tel" name="telephone" placeholder="Eg: 076-890-2345" pattern="[0]{1}[0-9]{2}-[0-9]{3}-[0-9]{4}" required>
+			</div>
+			<br>
+			<div>
+			<fieldset style="width: 419px;">
+			<legend>Payment Methods</legend>
+				<input id="card" type="radio" name="payment_method" style="height: 13px; width: 13px;" value="card" required>
+				<label for="card">Card</label>
+				<br>
+				<input id="cash" type="radio" name="payment_method" style="height: 13px; width: 13px;" value="cash" required>
+				<label for="cash">Cash</label>
+			</fieldset
+			</div>
+			<br>
+			<div>
+				<input type="checkbox" required id="terms" style="height: 13px; width: 13px;">
+				<label for="terms">Terms and Conditions</label>
+			</div>
+			<br>
+			<div class="same-line-inputs">
+				<button type="submit">Submit</button>
+			</div>
+			<div>
+				<button type="reset">Reset Booking</button>
+			</div>
+		</form>
+		<hr>
+		<div>
+		<p><b>Contact us:</b><br>
+		Send us an email at: <a href="mailto:sathindu.geethika@gmail.com">mail@gmail.com</a><br>
+		Call us at: 011 236 0975</p>
+		</div>
+	</body>
+</html>
