@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tutorial 1 first page</title>
+    <style>
+      body {
+        font-family: Helvetica, Verdana, sans-serif;
+        font-size: 20px;
+        background-color: #cce6f4;
+        color: #607483;
+      }
+
+      h1 {
+        color: #ba324f;
+        font-size: 2.5em;
+        text-align: center;
+      }
+
+      .oneClass {
+        color: #175676;
+      }
+
+      #name {
+        text-transform: capitalize;
+      }
+
+      ul {
+        list-style: square;
+      }
+
+      .datetime-placeholder {
+        color: #dd2d4a;
+        font-weight: bolder;
+      }
+
+      #date {
+        font-family: "Courier New", Courier, monospace;
+        font-weight: bold;
+      }
+    </style>
+
+    <script type="text/javascript" src="Js_test.js">
+	</script>
+
+  </head>
+  <body>
+    <h1>Tutorial 1 - Sathindu Perera</h1>
+    <p class="oneClass">
+      <b
+        >My name is <span id="name">sathindu perera</span>. I'm 17 years old. I
+        am a undergraduate at IIT following the Software Engineering degree.</b
+      >
+    </p>
+    <p class="oneClass">
+      <i
+        >I dont have a lot of hobbies, but i do like to draw and paint. Thats
+        about it though.</i
+      >
+    </p>
+    <hr />
+    <ul>
+      <li><address class="oneClass">sathindu.20221098@iit.ac.lk</address></li>
+      <li id="date"></li>
+    </ul>
+	
+	<script>
+		dateDisplay();
+	</script>
+
+    <!-- <script type="javascript" src="Js_test.js"></script> -->
+  </body>
+</html>
